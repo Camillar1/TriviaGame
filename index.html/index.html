@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>trivia game</title>
-    <link rel="stylesheet" href ="style.css"
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/javascript/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Black+Ops+One|Bungee|Bungee+Shade|Creepster|Ewert|Fruktur|Gravitas+One|Monoton|Rubik:900" rel="stylesheet">
+
 </head>
+
 <body>
-    <script src= 
+    <h1> Trivia Game!</h1>
+
+    <form id="quiz" name="quiz">
+
+
+        <p>What is another word for lexicon?</p>
+        <input type="radio" id="mc" name="question">Book<br>
+        <input type="radio" id="mc" name="question" value="Dictionary">Dictionary<br>
+        <input type="radio" id="mc" name="question">Map<br>
+
+
+        <p>What is the seventh planet from the sun? </p>
+        <input type="radio" id="mc" name="question2">Saturn<br>
+        <input type="radio" id="mc" name="question2">Mars<br>
+        <input type="radio" id="mc" name="question2" value="Uranus">Uranus<br>
+
+        <p>What is the worlds largest river</p>
+        <input type="radio" id="mc" name="question3" value="Amazon">Amazon<br>
+        <input type="radio" id="mc" name="question3">Mississippi<br>
+        <input type="radio" id="mc" name="question3">Colorado<br>
+
+        <p>What is the diameter of the earth?</p>
+        <input type="radio" id="mc" name="question4">6,573 miles<br>
+        <input type="radio" id="mc" name="question4">10,000 miles<br>
+        <input type="radio" id="mc" name="question4" value="8,000 miles">8,000 miles<br>
+
+        <input id="button" type="button" value="Finished!" onclick="check();">
+
+    </form>
+
+    <div id="after_submit">
+        <p id = "messages"></p>
+        <p id="number_correct"></p>
+<img id = "pictures">
+
+    </div>
+
+
 </body>
-</html>
